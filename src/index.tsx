@@ -17,6 +17,21 @@ const NiaBridge = NativeModules.NiaBridge
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return NiaBridge.multiply(a, b);
+export function register(
+  niaAccessToken: string,
+  destination: string
+): Promise<boolean> {
+  return NiaBridge.register(niaAccessToken, destination);
+}
+
+export function login(destination: string): Promise<boolean> {
+  return NiaBridge.login(destination);
+}
+
+export function isLoggedIn(): Promise<boolean> {
+  return NiaBridge.isLoggedIn();
+}
+
+export function logoutAndClear(): Promise<boolean> {
+  return NiaBridge.logoutAndClear();
 }
