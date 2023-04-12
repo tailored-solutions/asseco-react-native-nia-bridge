@@ -20,10 +20,10 @@ class ApplicationInfo {
     @SerializedName("SpRealm")
     var SpRealm : String
 
-    constructor() {
+    constructor(destination: String) {
         ApplicationName = ConstantFunctions.AppName
         ApplicationVersion = Constants.AppVersion
-        SpRealm =  ConstantFunctions.SpRealm
+        SpRealm =  destination
         MobileOs = "Android"
         MobileOsVersion = android.os.Build.VERSION.RELEASE
         Model = android.os.Build.MODEL

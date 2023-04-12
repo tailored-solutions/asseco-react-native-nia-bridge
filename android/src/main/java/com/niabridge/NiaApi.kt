@@ -48,7 +48,7 @@ class NiaApi {
       val reqData = RegisterRequest(
         accessToken,
         Constants.ProtocolVersion,
-        ApplicationInfo(),
+        ApplicationInfo(destination),
         rsaKeys.PublicKeyBase64
       )
       val jsonData = Gson().toJson(reqData)
@@ -63,8 +63,7 @@ class NiaApi {
 
       val reqBody = jsonEnv.toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
       val request = Request.Builder()
-        //.url(Constants.ApiBaseUrl(AppConfig.Environment) + Constants.ApiRegisterPath)
-        .url(destination + Constants.ApiRegisterPath)
+        .url(Constants.ApiBaseUrl(AppConfig.Environment) + Constants.ApiRegisterPath)
         .post(reqBody)
         .build()
 
@@ -160,7 +159,7 @@ class NiaApi {
         com.niabridge.api.Credentials(applicationId, otp, partitionId),
         sessionID.toString(),
         Constants.ProtocolVersion,
-        ApplicationInfo(),
+        ApplicationInfo(destination),
         privateKeyB64
       )
       val jsonData = Gson().toJson(reqData)
@@ -176,8 +175,7 @@ class NiaApi {
 
       val reqBody = jsonEnv.toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
       val request = Request.Builder()
-        //.url(Constants.ApiBaseUrl(AppConfig.Environment) + Constants.ApiLoginPath)
-        .url(destination + Constants.ApiLoginPath)
+        .url(Constants.ApiBaseUrl(AppConfig.Environment) + Constants.ApiLoginPath)
         .post(reqBody)
         .build()
 
