@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactContext
+import com.facebook.react.bridge.ReadableMap
 import com.ndt.ggmobileclient.CipherData
 import com.ndt.ggmobileclient.CryptoTools
 import com.niabridge.api.*
@@ -263,6 +264,16 @@ class NiaApi {
     }
     promise.resolve(true)
     Log.d("NiaApi-CleanDevice", "\n\rApplication was unregistered.")
+  }
+
+  fun isDeviceRegistered(promise: Promise) {
+    val sharedPref = context.getSharedPreferences(Constants.PreferencesLabel, Context.MODE_PRIVATE)
+    val isRegistered = sharedPref.getBoolean(Constants.IsRegistered, false)
+    promise.resolve(isRegistered)
+  }
+
+  fun getLoginToken(promise: Promise) {
+    promise.resolve(AccessToken)
   }
 }
 

@@ -35,3 +35,17 @@ export function isLoggedIn(): Promise<boolean> {
 export function logoutAndClear(): Promise<boolean> {
   return NiaBridge.logoutAndClear();
 }
+
+export function isDeviceRegistered(): Promise<boolean> {
+  return NiaBridge.isDeviceRegistered();
+}
+
+export function getToken(): Promise<string | null> {
+  return NiaBridge.getToken().then((token: string | null) => {
+    if (typeof token === 'string' && token.length > 0) return token;
+
+    return null;
+  });
+}
+
+export default NiaBridge;

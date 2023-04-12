@@ -39,6 +39,18 @@ class NiaBridgeModule(reactContext: ReactApplicationContext) : ReactContextBaseJ
     niaApi.cleanDevice(promise)
   }
 
+  @ReactMethod
+  fun isDeviceRegistered(promise: Promise) {
+    Log.d("NIA", "IsDeviceRegistered method called")
+    niaApi.isDeviceRegistered(promise)
+  }
+
+  @ReactMethod
+  fun getToken(promise: Promise) {
+    Log.d("NIA", "GetToken method called")
+    niaApi.getLoginToken(promise)
+  }
+
   companion object {
     const val NAME = "NiaBridge"
   }
