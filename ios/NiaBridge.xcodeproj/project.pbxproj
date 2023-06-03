@@ -3,12 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* NiaBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* NiaBridge.m */; };
-		F4FF95D7245B92E800C19C63 /*  NiaBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  NiaBridge.swift */; };
+		98A852C263353F90E533E50C /* libPods-NiaBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F5F75BEDBBA1C65E3532BE /* libPods-NiaBridge.a */; };
+		B325EDD02A2CE6B4002D7F28 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B325EDCF2A2CE6B4002D7F28 /* Persistence.swift */; };
+		B367AA8D2A2CA3DE004B726C /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AA8C2A2CA3DE004B726C /* ApiRequest.swift */; };
+		B367AA932A2CA4BE004B726C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AA922A2CA4BE004B726C /* Constants.swift */; };
+		B367AA962A2CA527004B726C /* CryptoTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AA952A2CA527004B726C /* CryptoTools.swift */; };
+		B367AA9D2A2CA58A004B726C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AA9C2A2CA58A004B726C /* Functions.swift */; };
+		B367AA9F2A2CA5F3004B726C /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AA9E2A2CA5F3004B726C /* RSA.swift */; };
+		B367AAA12A2CA5FB004B726C /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAA02A2CA5FB004B726C /* AES.swift */; };
+		B367AAA82A2CA686004B726C /* getRegisterRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAA32A2CA686004B726C /* getRegisterRequestBody.swift */; };
+		B367AAA92A2CA686004B726C /* getTestReqestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAA42A2CA686004B726C /* getTestReqestBody.swift */; };
+		B367AAAA2A2CA686004B726C /* RequestEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAA52A2CA686004B726C /* RequestEnvelope.swift */; };
+		B367AAAB2A2CA686004B726C /* ResponseEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAA62A2CA686004B726C /* ResponseEnvelope.swift */; };
+		B367AAAC2A2CA686004B726C /* getLoginRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAA72A2CA686004B726C /* getLoginRequestBody.swift */; };
+		B367AAAE2A2CA6D0004B726C /* CertificatePinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAAD2A2CA6D0004B726C /* CertificatePinning.swift */; };
+		B367AAB02A2CA812004B726C /* SharedVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367AAAF2A2CA812004B726C /* SharedVars.swift */; };
+		F4FF95D7245B92E800C19C63 /* NiaBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* NiaBridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +39,25 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libNiaBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNiaBridge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A43DC036018C1E43456B0C /* Pods-NiaBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiaBridge.release.xcconfig"; path = "Target Support Files/Pods-NiaBridge/Pods-NiaBridge.release.xcconfig"; sourceTree = "<group>"; };
+		20F5F75BEDBBA1C65E3532BE /* libPods-NiaBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NiaBridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		859C8A251B71CDB265BDF1F4 /* Pods-NiaBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiaBridge.debug.xcconfig"; path = "Target Support Files/Pods-NiaBridge/Pods-NiaBridge.debug.xcconfig"; sourceTree = "<group>"; };
+		B325EDCF2A2CE6B4002D7F28 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B3483B942A2CBB6600010D98 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3483B962A2CC19100010D98 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B367AA8C2A2CA3DE004B726C /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		B367AA922A2CA4BE004B726C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B367AA952A2CA527004B726C /* CryptoTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTools.swift; sourceTree = "<group>"; };
+		B367AA9C2A2CA58A004B726C /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		B367AA9E2A2CA5F3004B726C /* RSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		B367AAA02A2CA5FB004B726C /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		B367AAA32A2CA686004B726C /* getRegisterRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getRegisterRequestBody.swift; sourceTree = "<group>"; };
+		B367AAA42A2CA686004B726C /* getTestReqestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getTestReqestBody.swift; sourceTree = "<group>"; };
+		B367AAA52A2CA686004B726C /* RequestEnvelope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEnvelope.swift; sourceTree = "<group>"; };
+		B367AAA62A2CA686004B726C /* ResponseEnvelope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseEnvelope.swift; sourceTree = "<group>"; };
+		B367AAA72A2CA686004B726C /* getLoginRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getLoginRequestBody.swift; sourceTree = "<group>"; };
+		B367AAAD2A2CA6D0004B726C /* CertificatePinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatePinning.swift; sourceTree = "<group>"; };
+		B367AAAF2A2CA812004B726C /* SharedVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedVars.swift; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* NiaBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiaBridge.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* NiaBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiaBridge-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* NiaBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiaBridge.swift; sourceTree = "<group>"; };
@@ -35,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A852C263353F90E533E50C /* libPods-NiaBridge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,14 +83,81 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		44D6A42B09935573442C624E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				859C8A251B71CDB265BDF1F4 /* Pods-NiaBridge.debug.xcconfig */,
+				15A43DC036018C1E43456B0C /* Pods-NiaBridge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				B367AA942A2CA517004B726C /* Crypto */,
+				B367AAA22A2CA643004B726C /* RequestBody */,
+				B367AA8B2A2CA3CB004B726C /* Networking */,
+				B367AA912A2CA4A9004B726C /* Shared */,
 				F4FF95D6245B92E800C19C63 /* NiaBridge.swift */,
 				B3E7B5891CC2AC0600A0062D /* NiaBridge.m */,
+				B325EDCF2A2CE6B4002D7F28 /* Persistence.swift */,
 				F4FF95D5245B92E700C19C63 /* NiaBridge-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				44D6A42B09935573442C624E /* Pods */,
+				B18B9BA8A10BFE32CDFC1284 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		B18B9BA8A10BFE32CDFC1284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3483B962A2CC19100010D98 /* libAlamofire.a */,
+				B3483B942A2CBB6600010D98 /* libAlamofire.a */,
+				20F5F75BEDBBA1C65E3532BE /* libPods-NiaBridge.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B367AA8B2A2CA3CB004B726C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B367AA8C2A2CA3DE004B726C /* ApiRequest.swift */,
+				B367AAAD2A2CA6D0004B726C /* CertificatePinning.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B367AA912A2CA4A9004B726C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B367AA922A2CA4BE004B726C /* Constants.swift */,
+				B367AA9C2A2CA58A004B726C /* Functions.swift */,
+				B367AAAF2A2CA812004B726C /* SharedVars.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B367AA942A2CA517004B726C /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				B367AA952A2CA527004B726C /* CryptoTools.swift */,
+				B367AA9E2A2CA5F3004B726C /* RSA.swift */,
+				B367AAA02A2CA5FB004B726C /* AES.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		B367AAA22A2CA643004B726C /* RequestBody */ = {
+			isa = PBXGroup;
+			children = (
+				B367AAA72A2CA686004B726C /* getLoginRequestBody.swift */,
+				B367AAA32A2CA686004B726C /* getRegisterRequestBody.swift */,
+				B367AAA42A2CA686004B726C /* getTestReqestBody.swift */,
+				B367AAA52A2CA686004B726C /* RequestEnvelope.swift */,
+				B367AAA62A2CA686004B726C /* ResponseEnvelope.swift */,
+			);
+			path = RequestBody;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "NiaBridge" */;
 			buildPhases = (
+				E3AE297D01D2BC9985098A26 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -85,7 +187,8 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
@@ -95,11 +198,11 @@
 			};
 			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "NiaBridge" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
@@ -111,13 +214,51 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E3AE297D01D2BC9985098A26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiaBridge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B367AAA82A2CA686004B726C /* getRegisterRequestBody.swift in Sources */,
+				B325EDD02A2CE6B4002D7F28 /* Persistence.swift in Sources */,
+				B367AAB02A2CA812004B726C /* SharedVars.swift in Sources */,
+				B367AAAC2A2CA686004B726C /* getLoginRequestBody.swift in Sources */,
+				B367AA8D2A2CA3DE004B726C /* ApiRequest.swift in Sources */,
 				F4FF95D7245B92E800C19C63 /* NiaBridge.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* NiaBridge.m in Sources */,
+				B367AAA92A2CA686004B726C /* getTestReqestBody.swift in Sources */,
+				B367AA9F2A2CA5F3004B726C /* RSA.swift in Sources */,
+				B367AAAA2A2CA686004B726C /* RequestEnvelope.swift in Sources */,
+				B367AA932A2CA4BE004B726C /* Constants.swift in Sources */,
+				B367AAAE2A2CA6D0004B726C /* CertificatePinning.swift in Sources */,
+				B367AAA12A2CA5FB004B726C /* AES.swift in Sources */,
+				B367AA962A2CA527004B726C /* CryptoTools.swift in Sources */,
+				B367AAAB2A2CA686004B726C /* ResponseEnvelope.swift in Sources */,
+				B367AA9D2A2CA58A004B726C /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +269,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -136,14 +279,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -153,6 +299,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -168,9 +315,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -179,7 +327,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -187,14 +337,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -204,6 +357,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -212,23 +366,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 859C8A251B71CDB265BDF1F4 /* Pods-NiaBridge.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				EAGER_LINKING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = NiaBridge;
 				SKIP_INSTALL = YES;
@@ -240,14 +399,17 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A43DC036018C1E43456B0C /* Pods-NiaBridge.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				EAGER_LINKING = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = NiaBridge;
 				SKIP_INSTALL = YES;
